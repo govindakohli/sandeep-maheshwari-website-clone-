@@ -1,0 +1,326 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/* header part  */
+.nav_bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8rem;
+    /* background: pink; */
+}
+.logo {
+    font-size: 2.5rem;
+    font-family: "Dancing Script", cursive;
+}
+ul {
+    display: flex;
+    align-items: center;
+    gap: 2.2rem;
+    letter-spacing: 2px;
+    list-style: none;
+}
+
+ul a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem
+}
+ul a:active {
+  padding-bottom: 1rem;
+  border-bottom: 3px solid rgb(163, 209, 247);
+}
+
+ /* main content  */ 
+
+ .main-content {
+    display: flex;
+    align-items: center;
+    /* width:80% ; */
+    justify-content: center;
+    /* background: pink; */
+    
+ }
+ #sandeep-image {
+    height: 35rem;
+ }
+
+ .text-content{
+    background: rgb(235, 245, 255);
+    height: 35rem;
+    width: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+ }
+ .text-content h1 {
+    font-size: 4rem;
+    margin-left: 5rem;
+ }
+
+ .text-content p {
+    word-spacing: 0.5px;
+    font-size: 1.5rem;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+    text-align: center
+ }
+ .text-content button {
+    height: 4rem;
+    width: 12rem;
+    background:rgb(235, 245, 255);
+    border: none;
+ }
+ .text-content button:hover {
+    background: rgb(163, 209, 247);
+ }
+ .text-content button a {
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+ }
+ #credits {
+   margin-left: 10%;
+   margin-top: 5rem;
+   width: 80%;
+ }
+
+ /* about page  */
+
+ .page2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+ }
+ .bio {
+    background:rgb(235, 245, 255);
+    gap: 2rem;
+    height: 50rem;
+    width: 25rem;
+    /* border-bottom: 5px solid black; */
+ }
+ .bio img {
+    height:33rem ;
+    width: 25rem;
+ }
+ .bio h2 {
+    margin: 1rem;
+    text-align: center;
+    font-size: 2rem;
+ }
+ .bio p {
+    margin: 1rem;
+    text-align: center;
+    font-size: 1.1rem;
+ }
+ .bio button {
+    margin:1rem 0rem 1rem 6.5rem;
+    height: 4rem;
+    width: 12rem;
+    background: rgb(163, 209, 247);
+    border: none;
+ }
+ .bio  button a {
+    align-items: center;
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+ }
+ .bio  button:hover {
+    background: rgb(163, 209, 247);
+ }
+ 
+ /* 3 images section  */
+
+ .images img {
+    margin: 5rem 0.2rem;
+    height: 20rem;
+    width: 31rem;
+ }
+ .images img:hover {
+    -ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1); 
+    transform: scale(1.1); 
+ }
+ iframe {
+    margin: 5rem 10%;
+    height: 40rem;
+    width: 80%;
+ }
+ /* image slider  */
+ .slider {
+    padding: 5rem;
+    width: 100%;
+    overflow: hidden;
+    border: 5px solid #fff;
+    border-radius: 10px;
+}
+ .slides {
+    display: flex;
+    margin-right: -10px;
+    width: calc(100% * 5); /* 4 images * 2 (duplicate set) */
+    animation: slide 50s linear infinite;
+}
+ .slide {
+     margin-right: -10px;
+    width: calc(100% / 5); /* Each slide takes 1/8th of the total width */
+    flex-shrink: 0;
+}
+.slide img {
+   
+    width: 100%;
+    height: 35rem;
+    display: block;
+}
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* Move by 50% of the total width to create an infinite loop */
+}
+
+/* about page  */
+
+#about_img {
+ width: 100%;
+ margin-bottom: 0px;
+}
+.about-heading {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   background: rgb(235, 245, 255);
+   flex-wrap: wrap;
+   width: 80%;
+   height: auto;
+   margin-left: 10%;
+   margin-top: 0%;
+   padding: 4rem;
+}
+.about-heading h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 1rem 0rem;
+    font-family: "Montserrat", sans-serif;
+}
+.about-heading p {
+   font-size: 1.2rem;
+   margin: 1rem 0rem;
+   font-family: "Montserrat", sans-serif;
+}
+
+/* register page */
+/* 3 images section  */
+
+.register-images img {
+   margin: 1rem 0.2rem;
+   height: 20rem;
+   width: 31rem;
+}
+.register-images img:hover {
+   -ms-transform: scale(1.1); 
+   -webkit-transform: scale(1.1); 
+   transform: scale(1.1); 
+}
+#register-text  p  {
+   font-size: 1.3rem;
+   text-align: center;
+   margin: 2rem 5rem;
+
+}
+.form-details {
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+   margin: 2rem 20%;
+}
+.form-details input {
+   height: 3rem;
+   font-size: 1rem;
+   padding: .5rem 1rem;
+   border: none;
+   border-bottom: 1px solid grey;
+}
+.form-details h3 , #register-text  h3 {
+   font-weight: 400;
+   margin-top: 2.5rem;
+   font-size: 2rem;
+   text-align: center;
+}
+.form-details p {
+   text-align: center;
+   font-size: 1rem;
+}
+.form-details button {
+   height: 4rem;
+   width: 10rem;
+   background:rgb(163, 209, 247);
+   border: none;
+   font-size: 1rem;
+   word-spacing: 5px;
+   margin-left: 40%;
+}
+.form-details button a {
+      align-items: center;
+      font-size: 1.5rem;
+      word-spacing: 5px;
+      color: black;
+      text-decoration: none;
+}
+/* footer start  */
+
+footer {
+   /* background: #333;
+   color: #fff; */
+   padding: 20px 0;
+   position: relative;
+   bottom: 0;
+   width: 100%;
+}
+.footer-section {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   column-gap: 4rem;
+   margin-top: 3rem;
+}
+.footer-section a {
+   text-transform:uppercase;
+   font-family: "Montserrat", sans-serif;;
+   text-decoration: none;
+}
+.footer-section a:hover {
+   text-decoration: underline;
+}
+.footer-section .contact i {
+   margin-right: 10px;
+}
+.footer-bottom {
+   font-family: "Montserrat", sans-serif;;
+   text-align: center;
+   padding: 1rem;
+   margin-top: 1rem ;
+}
+ .icons  {
+   font-size: 2rem;
+   display: flex;
+   color: black;
+   column-gap: 3rem;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 8rem;
+}
+.icons a {
+   color: black;
+}
+@media(max-width: 768px) {
+   .footer-container {
+       flex-direction: column;
+   }
+}
